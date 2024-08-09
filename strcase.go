@@ -49,6 +49,10 @@ func ToKebab(inp string) string {
 	return caser.ToKebab(inp)
 }
 
+func ToSnake(inp string) string {
+	return caser.ToSnake(inp)
+}
+
 // ToScreamingSnake returns words in SNAKE_CASE (upper case words with underscores).
 func ToScreamingSnake(inp string) string {
 	return caser.ToSNAKE(inp)
@@ -61,4 +65,3 @@ func ConfigureAcronym(acronym string) {
 	overrides[acronym] = true
 	ocaser = newCaser(overrides)
 }
-
