@@ -53,6 +53,10 @@ func ToSnake(inp string) string {
 	return caser.ToSnake(inp)
 }
 
+func Hello() string {
+	return "hello"
+}
+
 // ToScreamingSnake returns words in SNAKE_CASE (upper case words with underscores).
 func ToScreamingSnake(inp string) string {
 	return caser.ToSNAKE(inp)
